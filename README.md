@@ -7,9 +7,9 @@ A deep learning practice project implementing handwritten digit classification o
 ---
 
 ## 1. Overview
-- **Goal:** Practice foundational computer vision concepts, PyTorch neural network building blocks (`torch.nn`), data loading (`DataLoader`), loss functions, optimization, and evaluation metrics.
+- **Goal:** Practice foundational computer vision concepts, PyTorch neural network building blocks (`torch.nn`), custom data loading (`Dataset` & `DataLoader`), loss functions, optimization, and evaluation metrics.
 - **Framework:** PyTorch & Torchvision
-- **Dataset:** MNIST (28x28 grayscale images of handwritten digits 0–9)
+- **Dataset:** [teavanist/MNIST-JPG](https://github.com/teavanist/MNIST-JPG) (MNIST handwritten digits formatted as individual JPG images, split into training and testing folders)
 
 ---
 
@@ -28,7 +28,7 @@ mnist_classification/
 ## 3. How to Run
 
 ### Option A: In Google Colab (Recommended)
-Click the badge above or use this link:
+Click the badge above or use this link:  
 👉 **[Open in Google Colab](https://colab.research.google.com/drive/1sHII8kFD9wZh9b2j0RrP_VnXdvEJytbm?usp=sharing)**
 
 ### Option B: Run Locally
@@ -39,7 +39,7 @@ Click the badge above or use this link:
    ```
 2. Install dependencies:
    ```bash
-   pip install torch torchvision matplotlib
+   pip install torch torchvision matplotlib pandas
    ```
 3. Open the notebook in VS Code or Jupyter Lab:
    ```bash
