@@ -1,5 +1,7 @@
 # MNIST Classification (PyTorch Basics Practice)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sHII8kFD9wZh9b2j0RrP_VnXdvEJytbm?usp=sharing)
+
 A deep learning practice project implementing handwritten digit classification on the classic MNIST dataset using PyTorch.
 
 ---
@@ -11,11 +13,12 @@ A deep learning practice project implementing handwritten digit classification o
 
 ---
 
-## 2. Structure
+## 2. Project Structure
 ```
 mnist_classification/
-├── notebooks/          # Jupyter / Google Colab notebooks
-├── data/               # Local dataset cache (ignored in Git)
+├── notebooks/
+│   └── mnist_classification_project.ipynb   # Main Jupyter / Google Colab notebook
+├── data/                                    # Local dataset cache (ignored in Git)
 ├── .gitignore
 └── README.md
 ```
@@ -23,9 +26,22 @@ mnist_classification/
 ---
 
 ## 3. How to Run
-1. Open the notebook in **Google Colab** or locally in VS Code / Jupyter Lab.
-2. Ensure PyTorch and Torchvision are installed:
+
+### Option A: In Google Colab (Recommended)
+Click the badge above or use this link:
+👉 **[Open in Google Colab](https://colab.research.google.com/drive/1sHII8kFD9wZh9b2j0RrP_VnXdvEJytbm?usp=sharing)**
+
+### Option B: Run Locally
+1. Clone this repository:
+   ```bash
+   git clone <repo-url>
+   cd mnist_classification
+   ```
+2. Install dependencies:
    ```bash
    pip install torch torchvision matplotlib
    ```
-3. Run all cells to download MNIST, train the model, and view predictions.
+3. Open the notebook in VS Code or Jupyter Lab:
+   ```bash
+   jupyter lab notebooks/mnist_classification_project.ipynb
+   ```
